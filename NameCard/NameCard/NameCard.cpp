@@ -41,12 +41,12 @@ int main(void)
 	if (list.LFirst(_outNameCard))
 	{
 		if (_outNameCard->getName() == "Ho") {
-			list.LRemove();
+			delete list.LRemove();
 		}
 		while (list.LNext(_outNameCard))
 		{
 			if (_outNameCard->getName() == "Ho") {
-				list.LRemove();
+				delete list.LRemove();
 			}
 		}
 	}
