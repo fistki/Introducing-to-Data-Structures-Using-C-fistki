@@ -3,7 +3,7 @@
 #include <iostream>
 
 template<typename LData>
-class ArrayList : public List<LData> {
+class ArrayList : private List<LData> {
 public:
 	ArrayList() : arr(List<LData>::LIST_LEN), numOfData(0), curPosition(-1) {}
 	ArrayList(const ArrayList& rhs)
