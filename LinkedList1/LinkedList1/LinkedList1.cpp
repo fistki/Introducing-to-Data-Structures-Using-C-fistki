@@ -19,7 +19,7 @@ void printNode(Node* pNode)
 }
 
 
-void testNode(void)
+void testTailNode(void)
 {
 	Node* head = NULL;
 	Node* tail = NULL;
@@ -86,11 +86,11 @@ void testNode(void)
 }
 
 
-void testReverseNode(void)
+void testHeadNode(void)
 {
 	Node* head = NULL;
-	Node* tail = NULL;
-	Node* cur = NULL;
+	Node* tail = NULL;  // 필요없음
+ 	Node* cur = NULL;
 
 	Node* newNode = NULL;
 	int readData;
@@ -103,13 +103,14 @@ void testReverseNode(void)
 			break;
 
 		newNode = new Node(readData);
-
-		if (tail == NULL)
-			tail = newNode;
-		else
+		if (head == NULL)
+			head = newNode;
+		else 
+		{
 			newNode->next = head;
-
-		head = newNode;
+			head = newNode;
+		}
+			
 	}
 	printf("\n");
 
@@ -152,9 +153,79 @@ void testReverseNode(void)
 
 }
 
+
+void testDummyNode(void)
+{
+	Node* head = NULL;
+	Node* cur = NULL;
+	Node* newNode = NULL;
+	Node* dummyNode = NULL;
+	int readData;
+
+	dummyNode = new Node();
+	head = dummyNode;
+
+	while (1)
+	{
+		printf("eneter natural number : ");
+		std::cin >> readData;
+		if (readData < 0)
+			break;
+		newNode = new Node(readData);
+		newNode->next = head->next;
+		head->next = newNode;
+
+	}
+	printf("\n");
+
+	printf("입력 받은 데이터의 출력\n");
+
+	cur = head;
+	if (head == NULL)
+		printf("출력할 데이터가 없음\n");
+	else 
+	{
+		while (cur->next != NULL)
+		{
+			cur = cur->next;
+			printNode(cur);
+		}
+
+	}
+
+
+	printf("\n");
+
+	Node* delcur = head;
+	Node* delnext = head->next;
+
+	if (delcur == NULL) printf("삭제할 데이터가 없습니다\n");
+	else
+	{
+		while (delnext != NULL)
+		{
+			delcur = delnext;
+			delnext = delcur->next;
+			delete delcur;
+		}
+
+	}
+	delete head;
+
+}
+
 int main(void)
 {
-	testNode();
-	testReverseNode();
+	printf("=============== tail 기반 연결 리스트 test ===============\n");
+	testTailNode();
+	printf("\n");
+
+	printf("=============== head 기반 연결 리스트 test ===============\n");
+	testHeadNode();
+	printf("\n");
+
+	printf("====== DummyNode가 포함된 head 기반 연결 리스트 test ======\n");
+	testDummyNode();
+
 	return 0;
 }
