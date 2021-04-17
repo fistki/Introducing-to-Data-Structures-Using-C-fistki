@@ -144,6 +144,7 @@
   <ItemGroup>
     <ClInclude Include="linkedlist.h" />
     <ClInclude Include="list.h" />
+    <ClInclude Include="point.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
