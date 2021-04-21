@@ -9,10 +9,7 @@ private:
 	std::string phone;
 public:
 	NameCard() {}
-	NameCard(const std::string& _name, const std::string& _phone): name(_name), phone(_phone) 
-	{
-		std::cout << "construct " << name << std::endl;
-	}
+	NameCard(const std::string& _name, const std::string& _phone): name(_name), phone(_phone) {}
 	NameCard(const NameCard& rhs): name(rhs.name), phone(rhs.phone) {}
 	NameCard& operator=(const NameCard& rhs)
 	{
@@ -20,10 +17,7 @@ public:
 		phone = rhs.phone;
 		return *this;
 	}
-	~NameCard() 
-	{
-		std::cout << "delete " << name << std::endl;
-	}
+	~NameCard() {}
 
 	void changePhoneNum(const std::string& _phone);
 

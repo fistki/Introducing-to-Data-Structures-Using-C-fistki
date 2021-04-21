@@ -28,7 +28,6 @@ template<typename LData>
 bool ArrayList<LData>::LInsert(const LData& data)
 {
 	if (numOfData >= List<LData>::LIST_LEN) {
-		std::cout << " Can't Insert Data\n";
 		return false;
 	}
 	arr[numOfData++] = data;

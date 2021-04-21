@@ -12,17 +12,21 @@ public:
 	~CLinkedList()
 	{
 		printf("리스트의 모든 노드를 삭제합니다.\n");
-		Node* delcur = tail;
-		Node* delnext = tail->next;
-		while (delnext != tail)
+		if (tail != nullptr)
 		{
+			Node* delcur = tail;
+			Node* delnext = tail->next;
+			while (delnext != tail)
+			{
+				printf("현재 남아 있는 노드 수 : %d\n", numOfNode--);
+				delcur = delnext;
+				delnext = delcur->next;
+				delete delcur;
+			}
 			printf("현재 남아 있는 노드 수 : %d\n", numOfNode--);
-			delcur = delnext;
-			delnext = delcur->next;
-			delete delcur;
+			delete tail;
 		}
-		printf("현재 남아 있는 노드 수 : %d\n", numOfNode--);
-		delete tail;
+
 		printf("삭제를 완료하였습니다.\n");
 
 	}
@@ -101,7 +105,7 @@ bool CLinkedList<LData>::LFirst(LData& pdata)
 template<typename LData>
 bool CLinkedList<LData>::LNext(LData& pdata)
 {
-	if (tail == nullptr || cur == nullptr ) return false;
+	if (tail == nullptr || cur == nullptr) return false;
 	before = cur;
 	cur = cur->next;
 	pdata = cur->data;

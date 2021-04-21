@@ -12,20 +12,15 @@ public:
 
 	~LinkedList()
 	{
-		printf("리스트의 모든 노드를 삭제합니다.\n");
 		Node* delcur = head;
 		Node* delnext = head->next;
 		while (delnext != nullptr)
 		{
-			printf("현재 남아 있는 노드 수 : %d\n", numOfNode--);
 			delcur = delnext;
 			delnext = delcur->next;
 			delete delcur;
 		}
-		printf("현재 남아 있는 노드 수 : %d\n", numOfNode--);
 		delete head;
-		printf("삭제를 완료하였습니다.\n");
-
 	}
 	bool LInsert(const LData& pdata);
 	bool LFirst(LData& pdata);	
