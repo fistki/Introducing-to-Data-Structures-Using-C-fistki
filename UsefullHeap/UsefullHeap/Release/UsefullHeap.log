@@ -1,0 +1,5 @@
+﻿main.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: bool __thiscall Heap<char>::empty(void)const " (?empty@?$Heap@D@@QBE_NXZ)
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: char __thiscall Heap<char>::erase(void)" (?erase@?$Heap@D@@QAEDXZ)
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: void __thiscall Heap<char>::insert(char const &)" (?insert@?$Heap@D@@QAEXABD@Z)
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: __thiscall Heap<char>::Heap<char>(int (__cdecl*)(char,char))" (??0?$Heap@D@@QAE@P6AHDD@Z@Z)
+C:\Users\minji\Documents\GitHub\reversing_haksim\Introducing-to-Data-Structures-Using-C-fistki\UsefullHeap\Release\UsefullHeap.exe : fatal error LNK1120: 4개의 확인할 수 없는 외부 참조입니다.

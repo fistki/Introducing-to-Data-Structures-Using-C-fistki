@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\minji\Documents\GitHub\Introducing-to-Data-Structures-Using-C-fistki\BinarySearchTree\BinarySearchTree\main.cpp(70,13): warning C4101: 'sNode' :참조되지 않은 지역 변수입니다.
+C:\Users\minji\Documents\GitHub\Introducing-to-Data-Structures-Using-C-fistki\BinarySearchTree\BinarySearchTree\main.cpp(100,13): warning C4101: 'CurrentLeftNode' :참조되지 않은 지역 변수입니다.
+C:\Users\minji\Documents\GitHub\Introducing-to-Data-Structures-Using-C-fistki\BinarySearchTree\BinarySearchTree\main.cpp(101,13): warning C4101: 'CurrentRightNode' :참조되지 않은 지역 변수입니다.
+  BinarySearchTree.vcxproj -> C:\Users\minji\Documents\GitHub\Introducing-to-Data-Structures-Using-C-fistki\BinarySearchTree\Debug\BinarySearchTree.exe
