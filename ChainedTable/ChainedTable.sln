@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChainedTable", "ChainedTable\ChainedTable.vcxproj", "{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Debug|x64.ActiveCfg = Debug|x64
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Debug|x64.Build.0 = Debug|x64
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Debug|x86.ActiveCfg = Debug|Win32
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Debug|x86.Build.0 = Debug|Win32
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Release|x64.ActiveCfg = Release|x64
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Release|x64.Build.0 = Release|x64
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Release|x86.ActiveCfg = Release|Win32
+		{15098F4B-DB39-45FE-B21B-B7C4E7950BC5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C8FB1CF-AE8E-4C4F-BFB9-12DFAFFA3ED6}
+	EndGlobalSection
+EndGlobal
