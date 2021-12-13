@@ -27,6 +27,7 @@ public:
 	BinarySearchTree(Node<BSTData>* pRoot = nullptr);
 	BinarySearchTree(const BinarySearchTree& rhs);
 	BinarySearchTree& operator=(const BinarySearchTree& rhs);
+	~BinarySearchTree();
 
 	// 루트 노드의 주소를 얻습니다.
 	Node<BSTData>* GetRoot();
@@ -81,6 +82,11 @@ BinarySearchTree<BSTData>& BinarySearchTree<BSTData>::operator=(const BinarySear
 {
 	root = rhs.root;
 	return *this;
+}
+
+template<typename BSTData>
+BinarySearchTree<BSTData>::~BinarySearchTree()
+{
 }
 
 template<typename BSTData>
